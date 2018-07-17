@@ -52,7 +52,7 @@ func TestIndices(t *testing.T) {
 		}
 		if i.fetchClusterName() != "testKluster" {
 			t.Errorf("Cluster name not persisted")
-        }
+		}
 		if stats.Indices["foo_1"].Total.Indexing.IndexTimeInMillis == 0 {
 			t.Errorf("Wrong indexing time recorded")
 		}
